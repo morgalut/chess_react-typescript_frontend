@@ -15,3 +15,13 @@ declare module 'chess.js' {
     export function Chess(): ChessInstance;
     // Export other entities as needed
 }
+// In your custom chess.js typings file
+declare module 'chess.js' {
+    interface ChessInstance {
+      get(square: string): Piece | null;
+      // other methods...
+    }
+    export function Chess(): ChessInstance;
+    // other exports...
+  }
+  
