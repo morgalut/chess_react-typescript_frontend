@@ -1,7 +1,7 @@
 // ChessService.tsx
 import axios from 'axios';
 
-const BASE_URL = 'http://127.0.0.1:5000';
+const BASE_URL = 'https://chess-flask-backend.onrender.com';
 
 export const getBoard = async () => {
   const response = await axios.get(`${BASE_URL}/board`);
